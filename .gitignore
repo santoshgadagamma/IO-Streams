@@ -1,0 +1,25 @@
+/*read  the input file and outputs its contents to the console*/
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
+import java.io.*;
+
+public class ReadPrintJob{
+
+	public static void main(String[] args) {
+		try {
+			Scanner sr = new Scanner(new File("C:\\Users\\sontosh\\Desktop\\input.txt"));
+																
+			String result = "";
+
+			while (sr.hasNext()) {
+				result = sr.nextLine();
+				System.out.println(result);
+			}
+
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+			System.out.pintln(ioe);
+		}
+	}
+}
